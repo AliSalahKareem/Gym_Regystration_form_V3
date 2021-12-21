@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="600.0" style="-fx-background-color: #2D2424;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="111.0" prefWidth="600.0" style="-fx-background-color: #B85C38;">
+         <children>
+            <Label layoutX="138.0" layoutY="38.0" prefHeight="35.0" prefWidth="266.0" text="User Registration" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="98.0" fitWidth="109.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/safe.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="85.0" layoutY="174.0" prefHeight="29.0" prefWidth="65.0" text="Firstname" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="85.0" layoutY="203.0" prefHeight="29.0" prefWidth="403.0" style="-fx-background-color: #E0C097;" />
+      <Label layoutX="85.0" layoutY="253.0" prefHeight="29.0" prefWidth="65.0" text="Lastname" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="85.0" layoutY="282.0" prefHeight="29.0" prefWidth="403.0" style="-fx-background-color: #E0C097;" />
+      <Label layoutX="85.0" layoutY="328.0" prefHeight="29.0" prefWidth="65.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="85.0" layoutY="357.0" prefHeight="29.0" prefWidth="403.0" style="-fx-background-color: #E0C097;" />
+      <Label layoutX="85.0" layoutY="411.0" prefHeight="17.0" prefWidth="65.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="85.0" layoutY="436.0" prefHeight="29.0" prefWidth="403.0" style="-fx-background-color: #E0C097;" />
+      <Label layoutX="85.0" layoutY="488.0" prefHeight="19.0" prefWidth="113.0" text="Confirm Password" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="85.0" layoutY="513.0" prefHeight="29.0" prefWidth="403.0" style="-fx-background-color: #E0C097;" />
+      <Button layoutX="84.0" layoutY="574.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="403.0" style="-fx-background-color: #5C3D2E;" text="Register" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
