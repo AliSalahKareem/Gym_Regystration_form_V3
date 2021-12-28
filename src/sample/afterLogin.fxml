@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AfterLogin">
    <center>
@@ -15,7 +18,50 @@
                   <Image url="@../img/incognito-shirtless-sportsman-posing-gym.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="Logout" layoutX="379.0" layoutY="196.0" mnemonicParsing="false" onAction="#userLogOut" text="Log Out" />
+            <Button fx:id="Logout" layoutX="300.0" layoutY="335.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="30.0" prefWidth="266.0" style="-fx-background-color: #5C3D2E;" text="Log Out" textFill="WHITE" />
+            <Label layoutX="300.0" layoutY="57.0" prefHeight="30.0" prefWidth="266.0" text="Today's Workout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="92.0" prefHeight="29.0" prefWidth="184.0" text="Push up : 10+6+4+2" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label layoutX="300.0" layoutY="121.0" prefHeight="29.0" prefWidth="184.0" text="Pull up : 5+5+5+5" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label layoutX="300.0" layoutY="150.0" prefHeight="29.0" prefWidth="184.0" text="Squat : 10+8+6+4" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Label layoutX="300.0" layoutY="179.0" prefHeight="29.0" prefWidth="184.0" text="Jump Squats : 5+5+5+5" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="555.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/user.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="498.0" layoutY="20.0" prefHeight="20.0" prefWidth="51.0" text="\@alisalah" textFill="WHITE" />
          </children>
       </AnchorPane>
    </center>

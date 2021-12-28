@@ -21,6 +21,8 @@ public class Login {
     }
 
     @FXML
+    private Button button2;
+    @FXML
     private Button button1;
     @FXML
     private Label wrongLogin;
@@ -29,13 +31,21 @@ public class Login {
     @FXML
     private PasswordField password;
 
+    public void cancelButtonOnAction(ActionEvent event){
+        Stage stage = (Stage) button2.getScene().getWindow();
+        stage.close();
+    }
 
     public void userLogin(ActionEvent event) throws IOException {
         checkLogin();
     }
     private void checkLogin() throws IOException {
         Main m = new Main();
-        if(username.getText().toString().equals("javacoding") && password.getText().toString().equals("123")){
+        if(
+                username.getText().toString().equals("javacoding") && password.getText().toString().equals("123")
+             || username.getText().toString().equals("AliSalah") && password.getText().toString().equals("A@L#I2000")
+             || username.getText().toString().equals("Ayat") && password.getText().toString().equals("Ayat")
+        ){
             wrongLogin.setText("Success!");
 
             m.changeScene("afterLogin.fxml");
